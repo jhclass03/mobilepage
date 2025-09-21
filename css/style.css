@@ -1,0 +1,98 @@
+@charset "utf-8"; /* 문자셋 utf-8 지정 */
+body, header, main, footer, nav, section, div, p, ul, li, h1, h2, h3, button{  margin:0;  padding:0;  }
+a{   text-decoration:none;  }
+ul{  list-style:none;       }
+img{ display:block;   border:0;  }
+body{   font-family: Arial,'맑은 고딕',sans-serif;   font-size:12px;  }
+
+header{   position:absolute;  left:0;  top:0;  width:100vw;  min-width:360px;  z-index:10000;  }
+header>h1{  
+  width:173px;  height:29px;  text-indent:-9999px;  margin:10px auto; 
+  background:url("../images/h1_logo.png") no-repeat;
+}
+header>#toggleBtn{
+  width:36px;  height:36px;  text-indent:-9999px;  border:0;
+  background:transparent url("../images/toggle.png") no-repeat;  background-size:cover;
+  position:absolute;  top:5px;  right:15px;
+}
+header>.gnb{
+  position:absolute;  left:0;  top:0;  width:100%;  min-height:100vh;  padding:50px 15px 14px;
+  box-sizing:border-box;  background-color:rgba(0,0,0,0.7);  display:none;
+}
+/* section>h2+p*/
+header>#toggleBtn:focus+.gnb{   display:block;   }
+/* header>.gnb>ul{  display:flex;  flex-direction:column;  gap:16px;  } */
+header>.gnb>ul>li{  margin-bottom:16px;  }
+header>.gnb>ul>li:last-child{  margin-bottom:16px;  }
+header>.gnb>ul>li>a{
+  display:block;  border-bottom:1px solid #c00;  color:#c00;
+  font-size:20px;   font-weight:bold;  letter-spacing:-1px;
+}
+header>.gnb>ul>li:nth-child(2)>a{  color:#09f;  border-color:#09f;   }
+header>.gnb>ul>li:nth-child(3)>a{  color:#3c3;  border-color:#3c3;   }
+header>.gnb>ul>li:nth-child(4)>a{  color:#f64;  border-color:#f64;   }
+header>.gnb>ul>li:nth-child(5)>a{  color:#fc3;  border-color:#fc3;   }
+header>.gnb>ul>li>.sub{  margin-top:6px;   }
+header>.gnb>ul>li>.sub>li{  margin-bottom:8px;  border-left:1px solid #f40;   }
+header>.gnb>ul>li>.sub>li:last-child{   margin-bottom:0;   }
+header>.gnb>ul>li>.sub a{  display:block; padding-left:12px;  color:#fff;  text-transform:uppercase; }
+
+main{  min-width:360px;  }
+.slide_container{  position:relative;  }
+.slide_container>.slides{  display:flex;  width:400vw;   }
+.slide_container>.slides>img{  /*  flex-grow:1; */ width:100%;  height:auto;  object-fit:cover;  }
+.slide_container>a{
+  display:block;  width:32px;  height:32px;  text-indent:-9999px;
+  background:rgba(255,255,255,0.4) url("../images/left.png") no-repeat 50% 50%;
+  background-size:24px 24px;
+  position:absolute;  top:50%;  transform:translateY(-50%);
+                  /*  bottom:50%;  transform:translateY(50%)  */
+}
+.slide_container>.prev{  left:0;   }
+.slide_container>.next{  right:0;  background-image:url("../images/right.png");   }
+
+.btns>ul{  display:flex;  }
+.btns>ul>li{   flex:1;  /* flex:1 1 0; */ /*  width:25%;  flex-grow:1 */  }
+.btns>ul>li>a>img{   width:100%;  height:auto;  object-fit:cover;          }
+
+.car_list>ul>li{
+  height:60px;  background:url("../images/list_bg.gif") repeat-x; background-size:contain;
+}
+.car_list>ul>li>a{
+  display:block;  padding-left:20px;  height:100%;
+/* padding:0 20px; display:flex; justify-content:space-between; align-items:center; (>)이미지 삽입*/
+  background:url("../images/detail.png") no-repeat right 20px center;
+}
+.car_list>ul>li>a>img{
+  height:100%;  width:auto;
+}
+
+.icons{
+  /* height:82px */ width:100%;  aspect-ratio:360/82;  
+  /* background:url("../images/list_bg.gif") repeat-x;  background-size:contain; */
+
+  /* background:linear-gradient(to bottom, #f5f5f5, #cccccc); */
+
+  background: #f2f2f2;
+  background: linear-gradient(180deg,rgba(242, 242, 242, 1) 0%, rgba(211, 211, 211, 1) 45%, rgba(188, 188, 188, 1) 56%, rgba(158, 158, 158, 1) 100%);
+
+  padding:0 20px;  box-sizing:border-box;
+  display:flex;  align-items:center;  justify-content:space-between;
+}
+.icons>div{  display:flex;  align-items:center;  gap:5px;   }
+.icons>div>h3{   font-size:14px;  letter-spacing:-1px; }
+.icons>div>a{
+  display:block;  width:35px;  height:35px;  text-indent:-9999px;  border-radius:5px;
+  background:url("../images/facebook.png") no-repeat;
+}
+.icons>.sns>a:nth-of-type(2){   background-image:url("../images/youtube.png");   }
+.icons>.sns>a:nth-of-type(3){   background-image:url("../images/insta.png");     }
+.icons>.catalog>a:nth-of-type(1){   background-image:url("../images/catalog1.png");   }
+.icons>.catalog>a:nth-of-type(2){   background-image:url("../images/catalog2.png");   }
+.icons>.catalog>a:nth-of-type(3){   background-image:url("../images/catalog3.png");   }
+
+footer{
+  height:60px;  background-color:#151515;  color:#fff;
+  /* text-align:center;  line-height:60px; */
+  display:flex;  justify-content:center;  align-items:center;
+}

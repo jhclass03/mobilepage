@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+  <title> Chrysler Mobile </title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body ontouchstart="">
+  <header> <!-- relative  z-index  -->
+    <h1>chrysler</h1> <!-- margin: auto -->
+    <button type="button" id="toggleBtn" onclick="this.focus();">전체메뉴</button> <!-- pos-absolute right -->
+    <nav class="gnb">
+      <ul>
+        <li>
+          <a href="javascript:void();">모델소개</a>
+          <ul class="sub">
+            <li><a href="javascript:void();">Chrysler 200</a></li>
+            <li><a href="javascript:void();">Chrysler 300C</a></li>
+            <li><a href="javascript:void();">Grand Voyager</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void();">구입문의</a>
+          <ul class="sub">
+            <li><a href="javascript:void();">전시장 검색</a></li>
+            <li><a href="javascript:void();">시승신청/견적상담</a></li>
+            <li><a href="javascript:void();">카탈로그 다운</a></li>
+            <li><a href="javascript:void();">소식신청</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void();">THIS IS CHRYSLER</a>
+          <ul class="sub">
+            <li><a href="javascript:void();">CHRYSLER VIDEO</a></li>
+            <li><a href="javascript:void();">CHRYSLER GALLERY</a></li>
+            <li><a href="javascript:void();">LATEST NEWS</a></li>
+            <li><a href="javascript:void();">OUR HISTORY</a></li>
+            <li><a href="javascript:void();">PLAY LIST</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void();">서비스</a>
+          <ul class="sub">
+            <li><a href="javascript:void();">서비스센터</a></li>
+            <li><a href="javascript:void();">고객지원 센터</a></li>
+            <li><a href="javascript:void();">서비스 프로그램</a></li>
+            <li><a href="javascript:void();">보증 프로그램</a></li>
+            <li><a href="javascript:void();">엑세서리 카탈로그</a></li>
+            <li><a href="javascript:void();">부품 가격정보</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void();">소셜 네트워크 서비스</a>
+          <ul class="sub">
+            <li><a href="javascript:void();">Facebook</a></li>
+            <li><a href="javascript:void();">Youtube</a></li>
+            <li><a href="javascript:void();">Instagram</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="slide_container">
+      <h2 hidden> 메인 비주얼 슬라이드 영역 </h2>
+      <div class="slides">
+        <img src="./images/slide1.jpg" alt="">
+        <img src="./images/slide2.jpg" alt="">
+        <img src="./images/slide3.jpg" alt="">
+        <img src="./images/slide4.jpg" alt="">
+      </div>
+      <a href="javascript:;" class="prev">PREV</a>
+      <a href="javascript:;" class="next">NEXT</a>
+      <!-- ul.pagenate -->
+    </section>
+    <section class="btns">
+      <h2 hidden>주요메뉴(바로가기 서비스)</h2>
+      <ul>
+        <li><a href="javascript:;"><img src="./images/direct_btn1.gif" alt="브랜드소개"></a></li>
+        <li><a href="javascript:;"><img src="./images/direct_btn2.gif" alt="NEWS"></a></li>
+        <li><a href="javascript:;"><img src="./images/direct_btn3.gif" alt="시승신청,견적상담"></a></li>
+        <li><a href="javascript:;"><img src="./images/direct_btn4.gif" alt="전시장,서비스센터"></a></li>
+      </ul>
+    </section>
+    <section class="car_list">
+      <h2 hidden>국내 출시 차종</h2>
+      <ul>
+        <li><a href="javascript:;"><img src="./images/300c.gif" alt="300c"></a></li>
+        <li><a href="javascript:;"><img src="./images/200.gif" alt="200"></a></li>
+        <li><a href="javascript:;"><img src="./images/voyager.gif" alt="grand voyager"></a></li>
+      </ul>
+    </section>
+    <section class="icons">
+      <div class="sns">
+        <h3 hidden>SNS ICON</h3>
+        <a href="javascript:;">facebook</a>
+        <a href="javascript:;">youtube</a>
+        <a href="javascript:;">instagram</a>
+      </div>
+      <div class="catalog">
+        <h3>카탈로그</h3>
+        <a href="javascript:;">catalog1</a>
+        <a href="javascript:;">catalog2</a>
+        <a href="javascript:;">catalog3</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Flat Chrysler Automobiles(FCA). all right reserved.</p>
+  </footer>
+</body>
+</html>
